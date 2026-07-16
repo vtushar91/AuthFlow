@@ -10,7 +10,7 @@ type RegisterRequest struct {
 	Password string `json:"password"`
 }
 
-func Register(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) Register(w http.ResponseWriter, r *http.Request) {
 
 	var req RegisterRequest
 
